@@ -1,0 +1,24 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           nf-segfault
+version:        0.1.0.0
+license:        MIT
+build-type:     Simple
+
+executable nf-segfault-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_nf_segfault
+  hs-source-dirs:
+      app
+  ghc-options: -g -debug -dcore-lint -Wall
+  build-depends:
+      base >=4.7 && <5
+    , ghc-heap
+    , regex-base
+    , regex-pcre
+  default-language: Haskell2010

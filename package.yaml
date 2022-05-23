@@ -1,0 +1,16 @@
+name:                nf-segfault
+version:             0.1.0.0
+license:             MIT
+
+dependencies:
+- base >= 4.7 && < 5
+
+executables:
+  nf-segfault-exe:
+    main: Main.hs
+    source-dirs: app
+    ghc-options: -g -debug -dcore-lint -Wall
+    dependencies:
+      - ghc-heap
+      - regex-base
+      - regex-pcre
